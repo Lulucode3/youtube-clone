@@ -1,0 +1,160 @@
+.header{
+    background-color: rgb(253, 203, 211);
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(250, 250, 250);
+    z-index: 100;
+}
+.left-section{
+    background-color: lightblue;
+    /*width: 150px;*/
+    display: flex;
+    align-items: center;
+}
+.hamburger_menu{
+    margin-left: 24px;
+    height: 40px;
+    margin-right: 24px;
+}
+.youtube_logo{
+    height: 100px;
+}
+.hamburger_menu:hover,
+.youtube_logo:hover{
+    cursor: pointer;
+}
+.middle-section{
+    background-color: rgb(255, 126, 255);
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    align-items: center;
+    margin-left: 70px;
+    margin-right: 35px;
+    max-width: 500px;
+}
+.search-bar{
+    border-radius: 20px;
+    width: 300px;
+    height: 36px;
+    padding-left: 10px;
+    font-size: 16px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(255, 120, 212);
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    /*inside, horizontal, vertical position, blur, color, opacity*/
+    box-shadow: inset 1px 2px 5px rgba(0,0,0,0.15);
+    flex: 1;
+    width: 0;
+}
+/*this is how you target a placeholder within an input element*/
+.search-bar::placeholder{
+    font-family: Roboto, Arial;
+    font-size: 16px;
+}
+.search-button,
+.voice-search-button{
+    background-color: pink;
+    height: 40px;
+    width: 60px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    border: none;
+    border-radius: 1000px;
+    box-shadow: inset 1px 1px 5px rgba(0,0,0,0.15);
+
+    position: relative;
+}
+.tooltip{
+    position: absolute;
+    white-space: nowrap;
+    bottom: -20px;
+    opacity: 0;
+    /*background-color: rgb(215, 236, 243);*/
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 5px;
+    transition: all 0.2s;
+}
+.voice-search-tooltip{
+    z-index: 1;
+
+}
+.search-button{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.voice-search-button:hover .tooltip,
+.search-button:hover .tooltip,
+.create-video-button:hover .tooltip{
+    cursor: pointer;
+    background-color: rgb(255, 218, 225);
+    opacity: 1;
+    font-family: Roboto, Arial;
+}
+.search-icon,
+.voice-search-icon{
+    height: 50px;
+    width: 50px;
+    margin-top: 4px;
+}
+.right-section{
+    background-color: lightblue;
+    width: 180px;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+.create-video-button{
+    position: relative;
+}
+.create-video-icon,
+.notification-icon,
+.profile-pic{
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+}
+.notifications{
+    position: relative;
+}
+.num-of-notifications{
+    position: absolute;
+    background-color: rgb(199, 21, 51);
+    color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 50px;
+    font-size: 13px;
+    right: 8px;
+    top: 6px;
+}
+.create-video-icon:hover,
+.notification-icon:hover,
+.profile-pic:hover,
+.notifications:hover{
+    cursor: pointer;
+}
+/*pointer-events: none; (prevents tooltip from showing when
+hovering over it
+
+white-space: nowrap; (prevents text such as tooltip text
+from wrapping around and covering imgs*/

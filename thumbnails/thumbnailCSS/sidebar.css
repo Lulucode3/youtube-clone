@@ -1,0 +1,41 @@
+.sidebar{
+    background-color: wheat;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 55px;
+    width: 72px;
+    padding-top: 5px;
+    z-index: 200px;
+}
+.sidebar:hover{
+    cursor: pointer;
+}
+/*the dot is called a CSS selector in this case it is a class name CSS selector
+there are other selectors Ex: Element name selector*/
+.siderbar-items{
+    /*background-color: red;
+    /*margin-bottom: 6px;*/
+    height: 76px;
+    display: flex;
+    /*vertical*/
+    align-items: center;
+    /*horizontal*/
+    justify-content: center;
+    /*colum changes the behavior of the 2 on top
+    to act like each other*/
+    flex-direction: column;
+}
+.siderbar-items:hover{
+    background-color: lightpink;
+}
+/*In this case a space selector targets all imgs within the sidebar-items
+you can use this to controle the size of the imgs*/
+.siderbar-items img{
+    height: 50px;
+}
+.siderbar-items p{
+    font-family: Roboto, Arial;
+    font-size: 12px;
+    /*margin-top: -3px;*/
+}

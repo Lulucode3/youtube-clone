@@ -1,0 +1,15 @@
+.favicon{
+    border-radius: 48px;
+}
+body{
+    background-color: pink;
+    padding-top: 80px;
+    padding-left: 96px;
+    padding-right: 24px;
+}
+p{
+    color: black;
+    font-family: Roboto, Arial;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
